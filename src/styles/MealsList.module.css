@@ -24,15 +24,16 @@
   padding: 0.4rem 0.8rem;
   margin-bottom: 1rem;
   display: inline-block;
-  clip-path: polygon(
-    93% 24%,
-    100% 53%,
-    93% 80%,
-    100% 100%,
-    0 100%,
-    0 0,
-    100% 0
-  );
+  clip-path:
+    polygon(
+      93% 24%,
+      100% 53%,
+      93% 80%,
+      100% 100%,
+      0 100%,
+      0 0,
+      100% 0
+    );
 }
 
 .mealsList {
@@ -44,6 +45,7 @@
 .meal:hover {
   cursor: pointer;
 }
+
 .mealName {
   background-color: #94949447;
   padding: 1rem;
@@ -59,6 +61,7 @@
   text-overflow: ellipsis;
   clip-path: polygon(46% 11%, 51% 0, 100% 0, 100% 100%, 0 100%, 0 0, 41% 0);
 }
+
 .mealImage {
   width: 100%;
   border-radius: 0.4rem;
@@ -83,15 +86,16 @@
   padding: 0.4rem 0.8rem;
   margin-bottom: 1rem;
   display: inline-block;
-  clip-path: polygon(
-    93% 24%,
-    100% 53%,
-    93% 80%,
-    100% 100%,
-    0 100%,
-    0 0,
-    100% 0
-  );
+  clip-path:
+    polygon(
+      93% 24%,
+      100% 53%,
+      93% 80%,
+      100% 100%,
+      0 100%,
+      0 0,
+      100% 0
+    );
 }
 
 .categoryList ul {
@@ -113,6 +117,7 @@
 .categoryList ul li button {
   width: 100%;
 }
+
 .categoryList ul li button:hover {
   cursor: pointer;
 }

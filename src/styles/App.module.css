@@ -1,7 +1,9 @@
 .header {
   background-color: var(--dark-bg);
   height: 200px;
+
   /* font-family: "Lilita One", cursive; */
+
   /* font-family: "Montserrat", sans-serif; */
 }
 
@@ -19,15 +21,16 @@ h1 {
   justify-content: center;
   align-items: center;
   font-family: "Lilita One", cursive;
-  clip-path: polygon(
-    100% 0,
-    100% 100%,
-    71% 86%,
-    49% 100%,
-    22% 86%,
-    0 100%,
-    0 0
-  );
+  clip-path:
+    polygon(
+      100% 0,
+      100% 100%,
+      71% 86%,
+      49% 100%,
+      22% 86%,
+      0 100%,
+      0 0
+    );
 }
 
 h1 a {
