@@ -1,0 +1,118 @@
+.mealsBodyWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mealsBody {
+  width: 65vw;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  display: grid;
+  grid-template-columns: 79% 19%;
+  column-gap: 1rem;
+  position: absolute;
+  top: -70px;
+  background-color: white;
+}
+
+.mealsHeader {
+  background-color: var(--dark-red-col);
+  color: white;
+  font-family: "Lilita One", cursive;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  clip-path: polygon(
+    93% 24%,
+    100% 53%,
+    93% 80%,
+    100% 100%,
+    0 100%,
+    0 0,
+    100% 0
+  );
+}
+
+.mealsList {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  gap: 1rem 1rem;
+}
+
+.meal:hover {
+  cursor: pointer;
+}
+.mealName {
+  background-color: #94949447;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: solid 1px #87808047;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  clip-path: polygon(46% 11%, 51% 0, 100% 0, 100% 100%, 0 100%, 0 0, 41% 0);
+}
+.mealImage {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+.mealCategory {
+  padding: 0.8rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  border: solid 1px #87808047;
+  color: var(--blue-col);
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.categoryHeader {
+  background-color: var(--blue-col);
+  color: white;
+  font-family: "Lilita One", cursive;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  clip-path: polygon(
+    93% 24%,
+    100% 53%,
+    93% 80%,
+    100% 100%,
+    0 100%,
+    0 0,
+    100% 0
+  );
+}
+
+.categoryList ul {
+  color: white;
+  background-color: var(--blue-col);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3rem;
+}
+
+.categoryList ul li {
+  padding: 0.3rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  border: solid 1px #87808047;
+}
+
+.categoryList ul li button {
+  width: 100%;
+}
+.categoryList ul li button:hover {
+  cursor: pointer;
+}
