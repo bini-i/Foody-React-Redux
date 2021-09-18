@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { mapDispatchToProps, mapStateToProps } from '../reducers';
 import MealsList from '../components/MealsList';
 import Meal from '../components/Meal';
@@ -19,19 +19,17 @@ const MealsListContainer = ({
     <div className={styles.mealsBodyWrapper}>
       <div className={styles.mealsBody}>
         <section className={styles.mealsSection}>
-          <BrowserRouter>
-            <Switch>
-              <Route exact path="/">
-                <h2 className={styles.mealsHeader}>{filter}</h2>
-                <div className={styles.mealsList}>
-                  <MealsList meals={meals} filter={filter} />
-                </div>
-              </Route>
-              <Route exact path="/meal">
-                <Meal />
-              </Route>
-            </Switch>
-          </BrowserRouter>
+          <Switch>
+            <Route exact path="/">
+              <h2 className={styles.mealsHeader}>{filter}</h2>
+              <div className={styles.mealsList}>
+                <MealsList meals={meals} filter={filter} />
+              </div>
+            </Route>
+            <Route exact path="/meal">
+              <Meal />
+            </Route>
+          </Switch>
         </section>
         <section className={styles.mealsCategory}>
           <h2 className={styles.categoryHeader}>CATEGORIES</h2>
