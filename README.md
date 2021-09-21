@@ -21,6 +21,7 @@ The project uses react components and redux store to display a list of meals fet
 - [Live Demo](#live-demo)
 - [Prerequisite](#prerequisite)
 - [How to use](#how-to-use)
+- [How to run tests](#how-to-run-tests)
 - [Authors](#authors)
 - [Contributing](#contributing)
 - [Show your support](#show-your-support)
@@ -57,6 +58,12 @@ The project uses react components and redux store to display a list of meals fet
 - Run `npm install` to install all dependencies.
 - Run `npm start` to locally start and serve the react application.
 - Navigate to `localhost:3000` in your browser to open the applcation.
+
+## How to run tests
+
+- Open a command line
+- Run ` npm install` to install all dependencies needed for testing.
+- Exectue `npm test` to run the tests
 
 ## Authors
 
