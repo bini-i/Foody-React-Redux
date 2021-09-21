@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as styles from '../styles/MealsList.module.css';
@@ -13,22 +12,28 @@ const MealsList = ({
     return meals;
   };
 
-  const mealsList = filteredMeals().map((meal) => (
-    <Link
-      key={meal.idMeal}
-      className={styles.meal}
-      to={{
-        pathname: '/meal',
-        state: {
-          name: meal.strMeal, category: meal.strCategory, image: meal.strMealThumb, instructions: meal.strInstructions,
-        },
-      }}
-    >
-      <div className={styles.mealName}>{meal.strMeal}</div>
-      <img className={styles.mealImage} src={meal.strMealThumb} alt={meal.strMeal} />
-      <div className={styles.mealCategory}>{meal.strCategory}</div>
-    </Link>
-  ));
+  const mealsList = filteredMeals().map((meal) => {
+    const name = meal.strMeal;
+    const category = meal.strCategory;
+    const image = meal.strMealThumb;
+    const instructions = meal.strInstructions;
+    return (
+      <Link
+        key={meal.idMeal}
+        className={styles.meal}
+        to={{
+          pathname: '/meal',
+          state: {
+            name, category, image, instructions,
+          },
+        }}
+      >
+        <div className={styles.mealName}>{meal.strMeal}</div>
+        <img className={styles.mealImage} src={meal.strMealThumb} alt={meal.strMeal} />
+        <div className={styles.mealCategory}>{meal.strCategory}</div>
+      </Link>
+    );
+  });
 
   return (
     <>
