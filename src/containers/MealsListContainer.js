@@ -6,23 +6,23 @@ import { mapDispatchToProps, mapStateToProps } from '../reducers';
 import MealsList from '../components/MealsList';
 import Meal from '../components/Meal';
 import alphabetsAtoZ from '../helpers/alphabets';
-import getMeal from '../helpers/api/getMeal';
-import getCategory from '../helpers/api/getCategory';
+import fetchCategory from '../helpers/api/fetchCategory';
+import getMeals from '../helpers/getMeals';
 import * as styles from '../styles/MealsList.module.css';
 
 const MealsListContainer = ({
   meals, filter, categories, addMeals, addCategories, changeFilter,
 }) => {
   useEffect(() => {
-    alphabetsAtoZ().map(async (char) => {
-      await getMeal(char).then((meals) => {
+    alphabetsAtoZ().forEach((char) => {
+      getMeals(char).then((meals) => {
         if (meals) {
           addMeals(meals);
         }
       });
     });
 
-    getCategory().then((categories) => {
+    fetchCategory().then((categories) => {
       (addCategories([{ strCategory: 'All Meals' }, ...categories]));
     });
   }, []);
