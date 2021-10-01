@@ -28,9 +28,9 @@ const MealsList = ({
           },
         }}
       >
-        <div className={styles.mealName}>{meal.strMeal}</div>
-        <img className={styles.mealImage} src={meal.strMealThumb} alt={meal.strMeal} />
-        <div className={styles.mealCategory}>{meal.strCategory}</div>
+        <div className={styles.mealName}>{name}</div>
+        <img className={styles.mealImage} src={image} alt={meal.strMeal} />
+        <div className={styles.mealCategory}>{category}</div>
       </Link>
     );
   });
