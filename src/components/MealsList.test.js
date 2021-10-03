@@ -10,9 +10,9 @@ describe('MealsList component', () => {
       <Router history={history}>
         <MealsList
           meals={[{
-            idMeal: 1, strMeal: 'meal', strCategory: 'meal1 cat', strMealThumb: 'meal1 image', strInstructions: 'meal1 instru',
+            id: 1, name: 'meal', category: 'meal1 cat', image: 'meal1 image', instructions: 'meal1 instru',
           }, {
-            idMeal: 2, strMeal: 'meal', strCategory: 'meal2 cat', strMealThumb: 'meal2 image', strInstructions: 'meal2 instru',
+            id: 2, name: 'meal', category: 'meal2 cat', image: 'meal2 image', instructions: 'meal2 instru',
           }]}
           filter="All Meals"
         />

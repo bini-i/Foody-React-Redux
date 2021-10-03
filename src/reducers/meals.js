@@ -5,8 +5,8 @@ const mealsReducer = (state = [], action) => {
     case ADD_MEAL: {
       const newState = [...state, ...action.meals];
       newState.sort((a, b) => {
-        const nameA = a.strMeal.toUpperCase();
-        const nameB = b.strMeal.toUpperCase();
+        const nameA = a.name.toUpperCase();
+        const nameB = b.name.toUpperCase();
         if (nameA < nameB) {
           return -1;
         }

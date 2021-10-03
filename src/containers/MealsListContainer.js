@@ -7,7 +7,7 @@ import MealsList from '../components/MealsList';
 import Meal from '../components/Meal';
 import alphabetsAtoZ from '../helpers/alphabets';
 import fetchCategory from '../helpers/api/fetchCategory';
-import getMeals from '../helpers/getMeals';
+import getMeals from '../helpers/api/getMeals';
 import * as styles from '../styles/MealsList.module.css';
 
 const MealsListContainer = ({

@@ -7,19 +7,18 @@ const MealsList = ({
 }) => {
   const filteredMeals = () => {
     if (filter !== 'All Meals') {
-      return meals.filter((meal) => meal.strCategory === filter);
+      return meals.filter((meal) => meal.category === filter);
     }
     return meals;
   };
 
   const mealsList = filteredMeals().map((meal) => {
-    const name = meal.strMeal;
-    const category = meal.strCategory;
-    const image = meal.strMealThumb;
-    const instructions = meal.strInstructions;
+    const {
+      id, name, category, image, instructions,
+    } = meal;
     return (
       <Link
-        key={meal.idMeal}
+        key={id}
         className={styles.meal}
         to={{
           pathname: '/meal',
@@ -29,7 +28,7 @@ const MealsList = ({
         }}
       >
         <div className={styles.mealName}>{name}</div>
-        <img className={styles.mealImage} src={image} alt={meal.strMeal} />
+        <img className={styles.mealImage} src={image} alt={meal.name} />
         <div className={styles.mealCategory}>{category}</div>
       </Link>
     );
