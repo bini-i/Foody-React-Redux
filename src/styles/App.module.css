@@ -1,0 +1,59 @@
+.header {
+  background-color: var(--dark-bg);
+  height: 200px;
+
+  /* font-family: "Lilita One", cursive; */
+
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.headerBody {
+  display: flex;
+  padding: 0.4rem 10rem;
+}
+
+h1 {
+  font-weight: bold;
+  background-color: var(--orange);
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lilita One", cursive;
+  clip-path:
+    polygon(
+      100% 0,
+      100% 100%,
+      71% 86%,
+      49% 100%,
+      22% 86%,
+      0 100%,
+      0 0
+    );
+}
+
+h1 a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerBody ul {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.headerBody ul li {
+  font-family: "Lilita One", cursive;
+  color: white;
+  padding: 0 3rem;
+}
+
+.headerBody ul li:hover {
+  cursor: pointer;
+}
